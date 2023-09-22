@@ -7,21 +7,21 @@
 
 /// @brief Enum for picking text color in console
 enum CONSOLE_COLOR{
-    Console_black   = 0, ///< Black color
-    Console_red     = 1, ///< Red color
-    Console_green   = 2, ///< Green color
-    Console_yellow  = 3, ///< Yellow color
-    Console_blue    = 4, ///< Blue color
-    Console_purple  = 5, ///< Purple color
-    Console_cyan    = 6, ///< Cyan color
-    Console_white   = 7, ///< White color
-    Console_default = 9  ///< Default color
+    CONSOLE_BLACK   = 0, ///< Black color
+    CONSOLE_RED     = 1, ///< Red color
+    CONSOLE_GREEN   = 2, ///< Green color
+    CONSOLE_YELLOW  = 3, ///< Yellow color
+    CONSOLE_BLUE    = 4, ///< Blue color
+    CONSOLE_PURPLE  = 5, ///< Purple color
+    CONSOLE_CYAN    = 6, ///< Cyan color
+    CONSOLE_WHITE   = 7, ///< White color
+    CONSOLE_DEFAULT = 9  ///< Default color
 };
 
 /// @brief Enum for picking bold or normal text
 enum CONSOLE_BOLD{
-    Console_normal  = 0, ///< Normal text
-    Console_bold    = 1  ///< Bold text
+    CONSOLE_NORMAL  = 0, ///< Normal text
+    CONSOLE_BOLD    = 1  ///< Bold text
 };
 
 /*!
