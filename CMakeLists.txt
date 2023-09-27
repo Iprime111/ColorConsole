@@ -4,5 +4,5 @@ project (ColorConsole)
 
 add_library (ColorConsole src/ColorConsole.cpp)
 
-target_include_directories (ColorConsole PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/headers)
+include_directories (${CMAKE_CURRENT_SOURCE_DIR}/headers)
 
