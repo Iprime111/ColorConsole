@@ -41,6 +41,15 @@ void printf_color (enum CONSOLE_COLOR color, enum CONSOLE_BOLD bold, const char 
 void fprintf_color (enum CONSOLE_COLOR color, enum CONSOLE_BOLD bold, FILE* stream, const char *format, ...);
 
 /*!
+    @brief Prints text in given stream with given color, bold and arguments
+    @param[in] color  Text color
+    @param[in] bold   Text bold
+    @param[in] format Printf format string
+    @param[in] args   Variadic arguments for vfprintf
+*/
+void vfprintf_color (enum CONSOLE_COLOR color, enum CONSOLE_BOLD bold, FILE* stream, const char *format, va_list args);
+
+/*!
     @brief Changes console color to given
     @param[in] color Text color
     @param[in] bold  Text bold
