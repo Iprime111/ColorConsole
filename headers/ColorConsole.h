@@ -24,6 +24,26 @@ enum CONSOLE_BOLD{
     CONSOLE_BOLD    = 1  ///< Bold text
 };
 
+#define BLACK_COLOR   "\033[0;30m"
+#define RED_COLOR     "\033[0;31m"
+#define GREEN_COLOR   "\033[0;32m"
+#define YELLOW_COLOR  "\033[0;33m"
+#define BLUE_COLOR    "\033[0;34m"
+#define PURPLE_COLOR  "\033[0;35m"
+#define CYAN_COLOR    "\033[0;36m"
+#define WHITE_COLOR   "\033[0;37m"
+#define DEFAULT_COLOR "\033[0;39m"
+
+#define BOLD_BLACK_COLOR   "\033[1;30m"
+#define BOLD_RED_COLOR     "\033[1;31m"
+#define BOLD_GREEN_COLOR   "\033[1;32m"
+#define BOLD_YELLOW_COLOR  "\033[1;33m"
+#define BOLD_BLUE_COLOR    "\033[1;34m"
+#define BOLD_PURPLE_COLOR  "\033[1;35m"
+#define BOLD_CYAN_COLOR    "\033[1;36m"
+#define BOLD_WHITE_COLOR   "\033[1;37m"
+#define BOLD_DEFAULT_COLOR "\033[1;39m"
+
 /*!
     @brief Prints text with given color, bold and arguments
     @param[in] color  Text color
