@@ -46,7 +46,7 @@ enum CONSOLE_BOLDNESS{
 #define BOLD_WHITE_COLOR   COLOR (1, 7)
 #define BOLD_DEFAULT_COLOR COLOR (1, 9)
 
-#define MOVE_CURSOR (number, code) "\033[" #number code
+#define MOVE_CURSOR(number, code) "\033[" #number code
 
 #define MOVE_CURSOR_UP(lines)         MOVE_CURSOR (lines,   "A")
 #define MOVE_CURSOR_DOWN(lines)       MOVE_CURSOR (lines,   "B")
