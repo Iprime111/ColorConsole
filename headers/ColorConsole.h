@@ -24,7 +24,7 @@ enum CONSOLE_BOLDNESS{
     CONSOLE_BOLD    = 1  ///< Bold text
 };
 
-#define COLOR (boldness, color) "\033[" #boldness ";3" #color "m"
+#define COLOR(boldness, color) "\033[" #boldness ";3" #color "m"
 
 #define BLACK_COLOR        COLOR (0, 0)
 #define RED_COLOR          COLOR (0, 1)
