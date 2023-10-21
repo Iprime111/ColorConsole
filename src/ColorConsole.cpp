@@ -2,7 +2,7 @@
 #include <cstdio>
 
 
-void printf_color (enum CONSOLE_COLOR color, enum CONSOLE_BOLD bold, const char *format, ...) {
+void printf_color (enum CONSOLE_COLOR color, enum CONSOLE_BOLDNESS bold, const char *format, ...) {
 
     va_list args;
     va_start (args, format);
@@ -14,7 +14,7 @@ void printf_color (enum CONSOLE_COLOR color, enum CONSOLE_BOLD bold, const char 
     va_end (args);
 }
 
-void fprintf_color (enum CONSOLE_COLOR color, enum CONSOLE_BOLD bold, FILE* stream, const char *format, ...) {
+void fprintf_color (enum CONSOLE_COLOR color, enum CONSOLE_BOLDNESS bold, FILE* stream, const char *format, ...) {
 
     va_list args;
     va_start (args, format);
@@ -26,7 +26,7 @@ void fprintf_color (enum CONSOLE_COLOR color, enum CONSOLE_BOLD bold, FILE* stre
     va_end (args);
 }
 
-void vfprintf_color (enum CONSOLE_COLOR color, enum CONSOLE_BOLD bold, FILE* stream, const char *format, va_list args) {
+void vfprintf_color (enum CONSOLE_COLOR color, enum CONSOLE_BOLDNESS bold, FILE* stream, const char *format, va_list args) {
 
     fprintf (stream, "\033[%d;3%dm", bold, color);
     vfprintf (stream, format, args);
@@ -34,7 +34,7 @@ void vfprintf_color (enum CONSOLE_COLOR color, enum CONSOLE_BOLD bold, FILE* str
 
 }
 
-void set_color (enum CONSOLE_COLOR color, enum CONSOLE_BOLD bold) {
+void set_color (enum CONSOLE_COLOR color, enum CONSOLE_BOLDNESS bold) {
     printf ("\033[%d;3%dm", bold, color);
 }
 
